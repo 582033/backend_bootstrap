@@ -1,0 +1,250 @@
+.choose-city {
+  position: relative;
+  width: 214px;
+}
+.choose-city .chooseCity_popup {
+  display: none;
+}
+.choose-city .chooseCity_popup li a {
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+.choose-city.open .chooseCity_popup {
+  display: block;
+}
+.choose-city .chooseCity {
+  display: block;
+  position: relative;
+  width: 204px;
+  height: 42px;
+  background: url(../images/banner_search_select.png) no-repeat left top;
+  line-height: 42px;
+  padding-left: 10px;
+  z-index: 999;
+}
+.choose-city .chooseCity strong {
+  float: left;
+  text-align: right;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 40px;
+}
+.choose-city .chooseCity input {
+  float: left;
+  background: transparent;
+  border: none;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-indent: 10px;
+  color: #7e7e7e;
+}
+.choose-city .chooseCity button {
+  float: left;
+  background: transparent url(../images/search_bar_selected_icon.png) no-repeat center 3px;
+  border: none;
+  text-indent: -150px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 34px;
+  position: relative;
+  margin-top: 11px;
+  line-height: 16px;
+}
+.choose-city.open .chooseCity {
+  background-image: url(../images/banner_search_select_hl.png);
+}
+.choose-city.open .chooseCity input {
+  color: #000;
+}
+.choose-city.open .chooseCity button {
+  background-position: center bottom;
+}
+.choose-city .chooseCity_popup {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 41px;
+  width: 420px;
+  background: #FFF;
+  z-index: 99;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  display: none;
+}
+
+#index .choose-city.from_city {
+  position: absolute;
+  width: 226px;
+  background: url(../images/destination_bar_bg.png) no-repeat left top;
+  top: 177px;
+  left: 2px;
+  padding: 6px;
+  height: 45px;
+}
+#index .choose-city.from_city .chooseCity {
+  width: 226px;
+}
+#index .choose-city.from_city .chooseCity_popup {
+  left: 6px;
+  top: 47px;
+}
+#index .main .filter_city ul li span.sel a {
+  color: #e64e0c;
+}
+
+#places {
+  overflow-x: hidden;
+}
+#places .main .sidebar dd.last {
+  padding-left: 35px;
+}
+#places .info_review .container .smallbox {
+  top: 220px;
+}
+#places .main .places #container {
+  width: 1100px;
+}
+#places .main .places #container li {
+  float: left;
+}
+#places .main .places #container .bigFood {
+  list-style: none;
+  margin-right: 5px;
+}
+#places .main .places #container .bigFood .food01 {
+  height: 408px;
+}
+#places .main .sidebar {
+  display: none;
+}
+#places .main .places .page_container {
+  width: 130%;
+}
+
+.dialog_login {
+  width: 400px;
+  text-align: center;
+  background: #FFF;
+  padding: 20px;
+  position: relative;
+  font-size: 14px;
+}
+.dialog_login .content {
+  height: 140px;
+  position: relative;
+}
+.dialog_login .content p {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 400px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+  z-index: 2;
+}
+.dialog_login .content span {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 400px;
+  text-align: center;
+  display: block;
+  z-index: 3;
+}
+
+#signin .info_review .login_container {
+  position: absolute;
+  top: 100px;
+  left: 48%;
+  width: 400px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 2;
+}
+#signin .info_review .login_container .content {
+  height: 160px;
+  position: relative;
+}
+#signin .info_review .login_container .content div {
+  position: absolute;
+  width: 400px;
+  height: 160px;
+  FILTER: alpha(opacity=60);
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  background: #FFF;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+#signin .info_review .login_container .content p {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 400px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+  z-index: 2;
+}
+#signin .info_review .login_container .content span {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 400px;
+  text-align: center;
+  display: block;
+  z-index: 3;
+}
+#signin .b1, #signin .b2, #signin .b3, #signin .b4, #signin .b5, #signin .b6, #signin .b7, #signin .b8 {
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+  display: block;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.6) !important;
+  filter: Alpha(opacity=60);
+  background: #fff;
+}
+#signin .b1, #signin .b8 {
+  margin: 0 5px;
+  background: #fff;
+}
+#signin .b2, #signin .b7 {
+  margin: 0 3px;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+#signin .b3, #signin .b6 {
+  margin: 0 2px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+#signin .b4, #signin .b5 {
+  margin: 0 1px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  height: 2px;
+}
+#signin .login_container b.b2 {
+  background-position: left top;
+}
+#signin .login_container b.b3 {
+  background-position: left -1px;
+}
+#signin .login_container b.b4 {
+  background-position: left -2px;
+}
+#signin .login_container b.b7 {
+  background-position: left top;
+}
+#signin .login_container b.b6 {
+  background-position: left -1px;
+}
+#signin .login_container b.b5 {
+  background-position: left -2px;
+}

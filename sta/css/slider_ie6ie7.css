@@ -1,0 +1,161 @@
+.trip-list header {
+	background:#000
+}
+
+.cover-guide {
+	background:#000
+}
+.viewer {
+	background:transparent
+}
+.viewer .note figcaption {
+	background:#000
+}
+.viewer .note .zoom-in {
+	background:none;
+/*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cdn.chanyouji.cn/assets/btn-zoom-in-6fa881d0d5fa5694d2d2c0f609a0c977.png', sizingMethod='scale')*/
+}
+.cover-header {
+	background:#000;
+	width:420px;
+	zoom:1
+}
+.cover-header .action {
+	background:#000
+}
+.show-top-menu {
+	top:10px;
+	right:10px
+}
+.show-top-menu .s-box {
+	background:#000;
+	border:1px solid #000;
+	padding:0
+}
+.show-top-menu .s-box .inner {
+	background:none;
+	padding:5px 14px
+}
+.show-top-menu .s-box-p {
+	background:#F7002F;
+	border:1px solid #F7002F
+}
+.show-top-menu .edit-opt, .show-top-menu .profile-menu {
+	margin-left:10px
+}
+.show-top-menu .profile-menu .inner {
+	padding-left:0
+}
+.show-top-menu .profile-menu .user-home, .show-top-menu .profile-menu .drop-menu a {
+	/*background-image:url(http://cdn.chanyouji.cn/assets/ico-top-menu-b-68404fa7110b287c64821e2565a35110.png)*/
+}
+.show-top-menu .profile-menu .user-home {
+	padding-left:34px;
+	background-position:10px -207px
+}
+.show-top-menu .profile-menu .user-home:hover {
+	background-position:10px -242px
+}
+.cover-header .action .set-cover .ico, .cover-header .action .edit-trip .ico, .cover-header .counter .viewer-num .ico, .cover-header .counter .liked-num .ico, .cover-header .counter .comments-num .ico, .show-top-menu .edit-opt .layout a, .show-top-menu .edit-opt .switch a, .show-top-menu .edit-opt .edit-trip a, .trips-header .trips-thumb a, .trips-header .trips-comments .ico, .trips-header .trips .d-node, .trips-header .trips .current {
+	background-image:url(../images/icon/show-sprite-b.png)
+}
+.note-footer .action .like .ico, .note-footer .action .comment .ico, .note-footer time {
+	background-image:url(../images/icon/show-sprite-w.png)
+}
+.viewer .scroll-right {
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/btn-show-right.png', sizing='scale');
+	background:none
+}
+.viewer .scroll-left {
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/btn-show-left.png', sizing='scale');
+	background:none
+}
+.more-travels {
+	right:0;
+	bottom:10px;
+	border:1px solid #000;
+	background:#000;
+	padding:0;
+	width:100px;
+	word-break:keep-all
+}
+.more-travels .inner {
+	background:none;
+	padding:5px 14px;
+	float:right
+}
+.viewer .trip-title {
+	background:#000;
+	padding:5px 15px 5px 0;
+	border:0;
+	top:10px;
+	left:0;
+	float:left
+}
+.viewer .trip-title .inner {
+	display:inline;
+	padding:5px 15px 5px 0;
+	background:none
+}
+.viewer .trip-title h1 {
+	padding-left:25px;
+	background-image:url(../images/icon/show-sprite-b.png)
+}
+.viewer .add-text {
+	background:url(../images/btn-add-text-8.png) no-repeat
+}
+.trips-header {
+	position:absolute;
+	bottom:16px
+}
+.trips-header .sb {
+	background:#000;
+	height:32px;
+	padding:0;
+	border:1px solid #000
+}
+.trips-header .sb .sb-inner {
+	background:transparent;
+	height:25px;
+	padding:5px 10px 0
+}
+.trips-header .trips-thumb {
+	margin-right:1px
+}
+.trips-header .trips-nav-wrapper {
+	margin-right:1px
+}
+.trips-header .trips-nav-wrapper .trips-path {
+	left:5px;
+	top:7px
+}
+.full-viewer-overlay {
+	background:#000
+}
+.viewer .note .replace-layer {
+	background:#888
+}
+.viewer .note .replace-layer .ico {
+	background:url(../images/ico-replace.png) no-repeat center;
+	width:46px;
+	height:56px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-28px 0 0 -23px
+}
+.nav-board .inner-text {
+	background-image:url(../images/icon/show-sprite-b.png)
+}
+.top-bar .profile .user a, .top-bar .profile li a {
+	/*background-image:url(http://cdn.chanyouji.cn/assets/ico-top-menu-b-68404fa7110b287c64821e2565a35110.png)*/
+}
+.top-bar .profile ul {
+	width:100px
+}
+.edit-nodes .photo-list {
+	height:250px
+}
+.edit-nodes .day .nodes {
+	height:210px
+}

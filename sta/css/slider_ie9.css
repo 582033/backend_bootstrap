@@ -1,0 +1,66 @@
+.trip-list header {
+	background:url(../images/black_alpha70.png);
+}
+.side-tips {
+	border:6px solid #A5A5A5
+}
+.cover-guide-line {
+	border-top:1px dashed #A5FEFF
+}
+.cover-guide-line .place {
+	border:1px dashed #A5FEFF;
+	border-width:0 0 1px 1px
+}
+.dialog-photo-rotate .r-90 {
+filter:progid:DXImageTransform.Microsoft.BasicImage(Rotation=1)
+}
+.dialog-photo-rotate .r-180 {
+filter:progid:DXImageTransform.Microsoft.BasicImage(Rotation=2)
+}
+.dialog-photo-rotate .r-270 {
+filter:progid:DXImageTransform.Microsoft.BasicImage(Rotation=3)
+}
+.show-top-menu .extra-toolbar .sl, .top-menu .sl {
+	border-left:1px solid #9e9893
+}
+.cover-header .drag-handle, .viewer, .viewer .note figcaption {
+	background:url(../images/black_alpha60.png);
+}
+.s-box {
+	background:transparent url(../images/black_alpha70.png) repeat
+}
+/*.s-box-p, .s-box-p .inner {
+	background-image:url(http://cdn.chanyouji.cn/assets/publish-btn-ce2d85b192d991404efb9adc1a65ad51.png)
+}*/
+.cover-guide, .trips-header .sb, .cover-header, .viewer .trip-title, .more-travels {
+	background:url(../images/black_alpha70.png) repeat
+}
+.cover-thumb{ background:url(../images/startexplorer.png) no-repeat left top;}
+.cover-header .counter {
+	border-top:1px solid #828180
+}
+.full-viewer-overlay {
+	background:url(../images/black_alpha90.png) repeat
+}
+.viewer .note .replace-layer {
+	background:url(../images/black_alpha60.png) repeat
+}
+.viewer .note .replace-layer .ico {
+	display:block;
+	background:url(../images/ico-replace.png) no-repeat center;
+	width:46px;
+	height:56px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-28px 0 0 -23px
+}
+.trips-header .trips-comments .sb-inner {
+	padding-right:15px
+}
+.cover-photo .load-ico {
+	background:url(../images/white_alpha80.png) repeat
+}
+.edit-nodes .photo-list .photo .node-name {
+	background:#000
+}

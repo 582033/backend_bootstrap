@@ -1,0 +1,20 @@
+div.screen{display:none;}
+div.print{display:block;}
+@charset "utf-8";
+/* CSS Document */
+.route_header{ width:100%; min-width:1000px; position:relative;}
+.route_header .info_bg{width:100%; min-width:1000px; height:60px; z-index:1;}
+.route_header .info{ position:absolute; width:1000px; bottom:0; height:60px; left:50%; margin-left:-500px; line-height:54px; font-size:24px; font-family:'Microsoft YaHei',SimHei,'LiHei Pro Medium'; z-index:2; color:#000;}
+.route_header .info img{ vertical-align:middle;}
+.route_header .info span{ float:right; font-size:14px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+
+.route_plan{width:1000px; margin:0 auto; margin-top:20px; line-height:30px; color:#000; font-family:'微软雅黑','宋体';}
+.route_plan dt{ border-bottom:1px solid #5d5d5d; width:1000px; margin:0 auto; }
+.route_plan dt span{ font-weight:bold; display:inline-block; width:100px; text-align:center;color:#000; border:1px solid #5d5d5d; border-bottom:none; margin-right:20px;}
+.route_plan dd{ width:900px; padding:20px 0 20px 100px;}
+.route_plan dd.poi{ width:900px; margin-left:100px; padding-left:0;border-top:1px solid #5d5d5d;}
+.route_plan dd.poi h3{font-weight:bold;}
+.route_plan dd.poi p strong{ font-weight:bold;}
+.route_plan dd.break{ page-break-after:always;}
+.route_plan dd div.GoogleMap{width:900px;height:340px;margin:10px 0px 10px 0px;}
+.print_button{ position:fixed; left:1250px; height:80px; font-weight:normal; color:#7D4F29; display:block; text-align:center; background:url(/sta/images/btn_bg4.png) no-repeat left top; width:40px; height:27px; line-height:27px; font-size:12px; }
