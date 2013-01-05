@@ -2,11 +2,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-<script src="/sta/vendor/js/jquery.json-2.3.min.js"></script>
-<script src="http://sta.in1001.com/lib/jquery/jquery.colorbox.js"></script>
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="/sta/css/jquery-ui.css" />
+<script src="/sta/js/jquery-1.8.3.js"></script>
+<script src="/sta/js/jquery.json-2.3.min.js"></script>
+<script src="/sta/js/jquery.colorbox.js"></script>
+<script src="/sta/js/jquery-ui.js"></script>
 <link rel="stylesheet" href="/sta/colorbox/colorbox.css" />
 <style>
 a,img,div{
