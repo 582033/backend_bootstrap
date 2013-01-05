@@ -5,7 +5,7 @@ class xianzong extends MY_Controller {
 		$this->load->database();
 		$this->icon_url_host = '/sta/images/xianzong/appicon/';
 	}
-	public function index($type) {
+	public function index($type='android') {
 		$where = array('xianzong_type' => $type);
 		$data['apps'] = $this->db
 				->from('xianzong_recommend_apps')

@@ -401,14 +401,8 @@ $config['mq_user'] = 'guest';
 $config['mq_pass'] = 'guest';
 
 
-$config['webhost'] = "http://xianlu.in1001.com";	
+$config['webhost'] = "http://b-o.in1001.com";	
 
-
-$config['start'] = "0";	//默认查询start值
-$config['limit'] = "10";	//默认查询limit值
-$config['passport_url'] = 'http://passport.in1001.com';
-$config['img_host'] = 'http://img.in1001.com';
-$config['inner_ip'] = 'auto';
 
 if (file_exists(APPPATH . 'config/local.config.php')){
 	include APPPATH . 'config/local.config.php';
