@@ -2,8 +2,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<script src="/sta/vendor/js/jquery-1.8.2.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="/sta/vendor/js/jquery.json-2.3.min.js"></script>
 <script src="http://sta.in1001.com/lib/jquery/jquery.colorbox.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <link rel="stylesheet" href="/sta/colorbox/colorbox.css" />
 <style>
 a,img,div{
@@ -63,6 +66,19 @@ body{
 </style>
 <script>
 	$(document).ready(function(){
+		$( ".main" ).sortable({
+			stop: function( event, ui ) { 
+				var ids=[];
+				$('input.ids').each(function(){
+					var id = $(this).val();
+					ids.push(id)	
+				});
+				console.log($.toJSON(ids));
+				post_data = { ids : $.toJSON(ids) };
+				$.post( '/xianzong/update_sortby', post_data);
+			}
+		});
+
 		$('body').on('click', 'div.list', function(){
 			id = $(this).find('input[type="hidden"]').val()
 			$.colorbox({
@@ -77,17 +93,19 @@ body{
 </head>
 <body>
 	<div><input type='button' value='ANDROID' onclick="location.href='/xianzong/android'"><input type='button' value='ios' onclick="location.href='/xianzong/ios'"></div>
-	{foreach $apps as $app}
-	<div class="list">
-		<input type='hidden' value='{$app.id}'>
-		<img class="icon" src='{$app.app_icon_url}' >
-		<div class="content">
-			<div class="title">{$app.title}</div>
-			<div class="sub_title">{$app.sub_title}</div>
+	<div class="main">
+		{foreach $apps as $app}
+		<div class="list">
+			<input class='ids' type='hidden' value='{$app.id}'>
+			<img class="icon" src='{$app.app_icon_url}' >
+			<div class="content">
+				<div class="title">{$app.title}</div>
+				<div class="sub_title">{$app.sub_title}</div>
+			</div>
+			<div class="button"></div>
 		</div>
-		<div class="button"></div>
+		{/foreach}
 	</div>
-	{/foreach}
 	<div class="list"><input type='button' value='添加新应用'></div>
 </body>
 <html>

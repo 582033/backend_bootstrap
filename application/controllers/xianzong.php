@@ -55,4 +55,15 @@ class xianzong extends MY_Controller {
 			->row_array();
 		return $result;
 	}
+	public function update_sortby()	{
+		$ids = json_decode($this->input->post('ids'));	
+		$i = 0;
+		foreach($ids as $id){
+			$update_data = array('weight' => $i--);
+			$where = array('id' => $id);
+			$this->db
+				->where($where)
+				->update('xianzong_recommend_apps', $update_data);
+		}
+	}
 }
