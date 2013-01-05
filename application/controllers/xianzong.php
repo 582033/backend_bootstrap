@@ -10,6 +10,7 @@ class xianzong extends MY_Controller {
 		$data['apps'] = $this->db
 				->from('xianzong_recommend_apps')
 				->where($where)
+				->order_by('weight desc')
 				->get()
 				->result_array();
 		$this->smarty->view('xianzong/recommend.tpl', $data);
@@ -28,6 +29,7 @@ class xianzong extends MY_Controller {
 						'app_icon_url' => $this->input->post('app_icon_url'),
 						'download_url' => $this->input->post('download_url'),
 						'xianzong_type' => $this->input->post('xianzong_type'),
+						'weight' => $this->input->post('weight'),
 						'updated_at' => $now,
 					);
 			if(!$id){

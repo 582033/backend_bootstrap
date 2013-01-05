@@ -45,6 +45,7 @@ body{
 		<span>副标题:</span><input name='sub_title' value='{$sub_title}' required />
 		<span>ICON:</span><input type='url' name='app_icon_url' value='{$app_icon_url}' required />
 		<span>下载连接:</span><input type='url' name='download_url' value='{$download_url}' required />
+		<span>权重:</span><input type='number' name='weight' value='{$weight}' required />
 		<span>类型:</span>
 		<select name='xianzong_type'>
 			<option value='android' {if $xianzong_type eq "android"}selected{/if}>ANDROID</option>
