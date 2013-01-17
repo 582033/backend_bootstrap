@@ -5,7 +5,7 @@ class xianzong extends MY_Controller {
 		$this->load->database();
 		$this->icon_url_host = '/sta/images/xianzong/appicon/';
 	}
-	public function index($type='android') {
+	public function index($type='android') {	//	{{{
 		$where = array('xianzong_type' => $type);
 		$data['apps'] = $this->db
 				->from('xianzong_recommend_apps')
@@ -14,8 +14,8 @@ class xianzong extends MY_Controller {
 				->get()
 				->result_array();
 		$this->smarty->view('xianzong/recommend.tpl', $data);
-	}
-	public function add($id){
+	}	//	}}}
+	public function add($id){	//	{{{
 		if($_SERVER['REQUEST_METHOD'] == 'GET'){
 			if(!$id) redirect('/xianzong');
 			$data = $this->check_id($id);
@@ -45,8 +45,8 @@ class xianzong extends MY_Controller {
 			}
 			redirect('/xianzong/'.$post['xianzong_type']);
 		}
-	}
-	private function check_id($id){
+	}	//	}}}
+	private function check_id($id){	//	{{{
 		$where = array('id' => $id);
 		$result = $this->db
 			->from('xianzong_recommend_apps')
@@ -54,8 +54,8 @@ class xianzong extends MY_Controller {
 			->get()
 			->row_array();
 		return $result;
-	}
-	public function update_sortby()	{
+	}	//	}}}
+	public function update_sortby()	{	//	{{{
 		$ids = json_decode($this->input->post('ids'));	
 		$i = 0;
 		foreach($ids as $id){
@@ -65,5 +65,5 @@ class xianzong extends MY_Controller {
 				->where($where)
 				->update('xianzong_recommend_apps', $update_data);
 		}
-	}
+	}	//	}}}
 }

@@ -24,9 +24,9 @@ td{ font-size:12px;}
 {foreach $orders as $order}
 <tr>
 	<td><a href='http://www.in1001.com/plan/{$order.plan}/printpreview?order_id={$order.number}'>{$order.number}</a></td>
-	<td>{$order.linkman}</td>
+	<td>{$order.name}</td>
 	<td>{date('Y-m-d', $order.time_create)}</td>
-	<td>&nbsp;</td>
+	<td>{$order.linkman}</td>
 	<td>{$order.contact}</td>
 	<td>{$order.count_person}</td>
 	<td>{$order.count_day}</td>
