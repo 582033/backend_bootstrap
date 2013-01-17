@@ -69,6 +69,7 @@ $route['404_override'] = '';
 $route['xianzong'] = 'xianzong/index';
 $route['xianzong/(android|ios)'] = 'xianzong/index/$1';
 $route['xianzong/add/(:num)'] = 'xianzong/add/$1';
+$route['order'] = 'order/index';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
