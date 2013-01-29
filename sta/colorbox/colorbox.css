@@ -55,7 +55,7 @@
         #cboxNext:hover{background-position:-75px 0px;}
         #cboxClose{
 			position:absolute;
-			background-image: url('/sta/images/icon/fancybox_sprite.png');
+			background-image: url(images/close.png);
 			top: -11px;
 			right: -11px;
 			width: 33px;

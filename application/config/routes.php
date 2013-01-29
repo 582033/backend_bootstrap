@@ -70,6 +70,8 @@ $route['xianzong'] = 'xianzong/index';
 $route['xianzong/(android|ios)'] = 'xianzong/index/$1';
 $route['xianzong/add/(:num)'] = 'xianzong/add/$1';
 $route['order'] = 'order/index';
+$route['partner'] = 'partner/index';
+$route['partner/add/(:num)'] = 'partner/add/$1';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

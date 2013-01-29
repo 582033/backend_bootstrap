@@ -25,7 +25,7 @@ td{ font-size:12px;}
 <tr>
 	<td><a href='http://www.in1001.com/plan/{$order.plan}/printpreview?order_id={$order.number}'>{$order.number}</a></td>
 	<td>{$order.name}</td>
-	<td>{date('Y-m-d', $order.time_create)}</td>
+	<td>{date('Y-m-d H:m', $order.time_created)}</td>
 	<td>{$order.linkman}</td>
 	<td>{$order.contact}</td>
 	<td>{$order.count_person}</td>
