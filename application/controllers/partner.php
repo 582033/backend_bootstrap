@@ -1,8 +1,10 @@
 <?php 
-class partner extends MY_Controller {
+require_once 'login.php';
+class partner extends Login {
 	private $partner_table = 'partner';
 	function __construct(){
 		parent::__construct();
+		parent::check_login();
 		$this->load->database();
 	}
 	public function index() {	//	{{{
