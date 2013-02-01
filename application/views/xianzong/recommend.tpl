@@ -1,22 +1,7 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<link rel="stylesheet" href="/sta/css/jquery-ui.css" />
-<script src="/sta/js/jquery-1.8.3.js"></script>
-<script src="/sta/js/jquery.json-2.3.min.js"></script>
-<script src="/sta/js/jquery.colorbox.js"></script>
-<script src="/sta/js/jquery-ui.js"></script>
-<link rel="stylesheet" href="/sta/colorbox/colorbox.css" />
+{capture name='wrapper'}
 <style>
 a,img,div{
 -webkit-tap-highlight-color:rgba(0,0,0,0);
-}
-body{
-	background-color:#dfdfdd;
-	min-width:320px;
-	padding:0px;
-	margin:0px;
 }
 .list{
 	clear:both;
@@ -79,7 +64,7 @@ body{
 			}
 		});
 
-		$('body').on('click', 'div.list', function(){
+		$('body').on('click', 'div.list, .add_app', function(){
 			id = $(this).find('input[type="hidden"]').val()
 			$.colorbox({
 				top:'50px',
@@ -90,10 +75,13 @@ body{
 		});
 	});
 </script>
-</head>
-<body>
-	<div><input type='button' value='ANDROID' onclick="location.href='/xianzong/android'"><input type='button' value='ios' onclick="location.href='/xianzong/ios'"></div>
-	<div class="main">
+	<div class='container well' style='margin:auto;margin-bottom:10px;'>
+		<input class='btn btn-primary' type='button' value='ANDROID' onclick="location.href='/xianzong/android'">
+		<input class='btn btn-primary' type='button' value='ios' onclick="location.href='/xianzong/ios'">
+		<input class='add_app btn btn-primary' type='button' value='添加新应用'>
+		<p></p>
+	</div>
+	<div class="container well main">
 		{foreach $apps as $app}
 		<div class="list">
 			<input class='ids' type='hidden' value='{$app.id}'>
@@ -106,6 +94,5 @@ body{
 		</div>
 		{/foreach}
 	</div>
-	<div class="list"><input type='button' value='添加新应用'></div>
-</body>
-<html>
+{/capture}
+{include file='index.tpl' page_id='xianzong'}

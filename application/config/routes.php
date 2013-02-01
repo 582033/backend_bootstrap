@@ -64,12 +64,13 @@
 |
 */
 
-$route['default_controller'] = "xianzong";
+$route['default_controller'] = "login";
 $route['404_override'] = '';
 $route['xianzong'] = 'xianzong/index';
 $route['xianzong/(android|ios)'] = 'xianzong/index/$1';
 $route['xianzong/add/(:num)'] = 'xianzong/add/$1';
 $route['order'] = 'order/index';
+$route['order/edit/(:num)'] = 'order/edit/$1';
 $route['partner'] = 'partner/index';
 $route['partner/add/(:num)'] = 'partner/add/$1';
 

@@ -1,11 +1,13 @@
 <?php 
 require_once 'login.php';
+require_once 'log.php';
 class partner extends Login {
 	private $partner_table = 'partner';
 	function __construct(){
 		parent::__construct();
 		parent::check_login();
 		$this->load->database();
+		$this->smarty->assign('page_id', 'partner');
 	}
 	public function index() {	//	{{{
 		$where = array();

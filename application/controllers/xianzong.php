@@ -1,9 +1,12 @@
 <?php 
-class xianzong extends MY_Controller {
+require_once 'login.php';
+class xianzong extends Login {
 	function __construct(){
 		parent::__construct();
+		parent::check_login();
 		$this->load->database();
 		$this->icon_url_host = '/sta/images/xianzong/appicon/';
+		$this->smarty->assign('page_id', 'xianzong');
 	}
 	public function index($type='android') {	//	{{{
 		$where = array('xianzong_type' => $type);

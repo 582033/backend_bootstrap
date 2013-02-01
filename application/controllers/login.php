@@ -30,7 +30,8 @@ class Login extends User {
 	}	//}}}
 
 	public function check_login(){	//{{{
-		$this->user_action->check_session($this->redirect_url);
+		$username = $this->user_action->check_session($this->redirect_url);
+		$this->smarty->assign('username', $username);
 	}	//}}}
 
 }

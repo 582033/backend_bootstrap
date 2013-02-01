@@ -28,6 +28,18 @@ class MY_Controller extends CI_Controller {
 
 		return $value;
 	} //}}}
+	function _post($name, $default=FALSE) { //{{{
+		// get and return default value if empty
+		if (array_key_exists($name, $this->pseudo_input)) {
+			$value = $this->pseudo_input[$name];
+		}
+		else {
+			$value = $this->input->post($name);
+		}
+		if ($value === '' || $value === FALSE) $value = $default;
+
+		return $value;
+	} //}}}
 	function _check_required($keys) { //{{{
 		/**
 		 * check required params

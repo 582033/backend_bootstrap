@@ -32,6 +32,9 @@ class User extends MY_Controller {
 		if (!$_SESSION['username']) {
 			redirect($url);		
 		}
+		else {
+			return $_SESSION['username'];
+		}
 	}	//}}}
 
 	protected function user_logout($url='/'){	//{{{

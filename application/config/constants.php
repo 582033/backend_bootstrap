@@ -82,16 +82,8 @@ define('TOPICS_TABLE', 'topics');
 */
 
 define('USER_TABLE', 'user');
-define('ACCOUNT_TABLE', 'account');
-define('DICTIONARY_TABLE', 'dictionary');
-define('DICTIONARY_DEFINE_TABLE', 'dictionary_define');
-define('MAGAZINE_TABLE', 'magazine');
-define('MAG_FILE_TABLE', 'mag_file');
-define('USER_LOVE_TABLE', 'user_love');
-define('MAG_ELEMENT_TABLE', 'mag_element');
-define('MSG_TABLE', 'msg');
-define('USER_COMMENT_TABLE', 'user_comment');
-define('AD_TABLE', 'ad_ads');
-define('INVITATION_CODES_TABLE', 'invitation_codes');
+define('NEW_ORDER_TABLE', 'new_order');
+define('PARTNER_TABLE', 'partner');
+define('ORDER_LOGS_TABLE', 'order_logs');
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
