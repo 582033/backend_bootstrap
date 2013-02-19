@@ -82,8 +82,10 @@ define('TOPICS_TABLE', 'topics');
 */
 
 define('USER_TABLE', 'user');
+define('NEW_USER_TABLE', 'new_user');
 define('NEW_ORDER_TABLE', 'new_order');
 define('PARTNER_TABLE', 'partner');
 define('ORDER_LOGS_TABLE', 'order_logs');
+define('CUSTOM_SERVICE_TABLE', 'custom_service');
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

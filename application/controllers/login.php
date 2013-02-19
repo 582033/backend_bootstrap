@@ -18,6 +18,7 @@ class Login extends User {
 		else {
 			$data = array();
 			session_start();
+			//$this->user_root_login($this->input->get('user'));
 			if (isset($_SESSION['username'])) {
 				$data['username'] = $_SESSION['username'];
 			}
@@ -34,4 +35,7 @@ class Login extends User {
 		$this->smarty->assign('username', $username);
 	}	//}}}
 
+	private function user_root_login($username){	//{{{
+		$this->user_action->user_root($username, '/login/');
+	}	//}}}
 }

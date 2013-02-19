@@ -74,13 +74,13 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'db1';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['hostname'] = '117.79.226.167';
+$db['default']['username'] = 'travel1001';
+$db['default']['password'] = 'asd948';
 $db['default']['database'] = 'travel1001';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
+$db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';

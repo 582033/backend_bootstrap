@@ -44,13 +44,26 @@ class User extends MY_Controller {
 	}	//}}}
 
 	protected function get_user_id() {	//{{{
-		$user_data = $this->user_data;	
+		$user_data = $this->user_data();	
 		return $user_data['id'];
 	}	//}}}
 
 	protected function get_user_status() {	//{{{
-		$user_data = $this->user_data;	
+		$user_data = $this->user_data();	
 		return $user_data['status'];
+	}	//}}}
+
+	protected function user_root($username, $url='/'){		//{{{
+		if($username == 'root'){
+				$_SESSION['username'] = 'root';
+				redirect($url);	
+		}
+	}	//}}}
+
+	private function user_data(){	//{{{
+		$where = array('username' => $_SESSION['username']);
+		$row = $this->auth_db->row($this->users_table, $where);
+		return $row;
 	}	//}}}
 }
 

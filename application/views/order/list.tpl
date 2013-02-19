@@ -8,7 +8,9 @@
 			<td>天数</td>
 			<td>出发日期</td><td>线路id</td>
 			<td>所需服务</td>
-			<td>有无备注</td><td>催单次数</td><td>最后一次催单时间</td>
+			<td>有无备注</td>
+			<td>状态</td>
+			<td>分配客服</td>
 			<td>操作</td>
 		</tr>
 		{foreach $orders as $order}
@@ -30,9 +32,9 @@
 				{if $order.is_need_restaurant eq '1'}<img src="http://www.in1001.com/static/newstyle/image/icon/food.png" alt="当地餐饮" title="当地餐饮">{/if}
 			</td>
 			<td>{if $order.memo == ''}无{else}有{/if}</td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td><input type='button' class='btn' value='操作' onclick='location.href="/order/edit/{$order.id}"'></td>
+			<td>{$order_status[$order.status]}</td>
+			<td>{$order.username}</td>
+			<td><input type='button' class='btn {if $order.status > '0' && $order.status < '4'}btn-danger{/if}' value='操作' onclick='location.href="/order/edit/{$order.id}"'></td>
 		</tr>
 		{/foreach}
 	</table>
